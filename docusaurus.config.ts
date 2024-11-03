@@ -3,9 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Manual de Información de Axotl.org',
+  tagline: 'Navegue entre artículos para enriquecer su conocimiento sobre Axotl Xires',
+  favicon: 'img/ajolote.svg',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -66,22 +66,28 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Axotl.org Documentación',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/ajolote.svg',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Legalidad',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Manual de usuario',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://axotl.org',
+          label: 'Axotl.org',
           position: 'right',
         },
       ],
@@ -99,37 +105,37 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
+          title: 'En redes sociales',
           items: [
             {
-              label: 'Stack Overflow',
+              label: 'LinkedIn',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Discord',
+              label: 'Instagram',
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
-              label: 'Twitter',
+              label: 'Facebook',
               href: 'https://twitter.com/docusaurus',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Más',
           items: [
             {
               label: 'Blog',
               to: '/blog',
             },
             {
-              label: 'GitHub',
+              label: 'Nosotros',
               href: 'https://github.com/facebook/docusaurus',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Axotl Xires Publicaciones. Algunos derechos reservados.`,
     },
     prism: {
       theme: prismThemes.github,
